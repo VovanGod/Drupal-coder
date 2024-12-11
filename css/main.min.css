@@ -299,6 +299,7 @@ body {
           transform: translateX(-100%);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  z-index: 110;
   padding-top: 80px;
   text-align: center;
 }
