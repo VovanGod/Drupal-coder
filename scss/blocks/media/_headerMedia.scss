@@ -1,0 +1,67 @@
+@media (max-width: 1600px) {
+    .header {
+        .container-flex {
+            flex-wrap: wrap;
+            row-gap: 30px;
+        }
+
+        .wrap {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 990px) {
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #000;
+        z-index: 100;
+        nav {
+            display: none;
+        }
+
+        .burger {
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .header {
+        padding: 34px 80px;
+
+        .container-flex {
+            padding: 0;
+        }
+        .logo {
+            width: 180px;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .header {
+        padding: 34px 40px;
+        
+        .burger {
+            width: 30px;
+            height: 3px;
+
+            &:after, &:before {
+                height: 3px;
+            }
+
+            &-active {
+                height: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .header {
+        padding: 34px 25px;
+    }
+}

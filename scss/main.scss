@@ -1,0 +1,19 @@
+/* Base */
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/base";
+@import "./base/utils";
+
+
+/* Blocks */
+@import "./blocks/header";
+@import "./blocks/modal";
+@import "./blocks/mainScreen";
+@import "./blocks/skills";
+
+
+/* Media Blocks */
+@import "./blocks/media/headerMedia";
+@import "./blocks/media/modalMedia";
+@import "./blocks/media/mainScreenMedia";
+@import "./blocks/media/skillsMedia";
