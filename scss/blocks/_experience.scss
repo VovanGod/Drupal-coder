@@ -1,0 +1,47 @@
+.experience {
+    padding-top: 175px;
+    background: linear-gradient(232.84deg, rgba(255, 255, 255, 0.55) -108.093%,rgba(255, 255, 255, 0) 72.552%),rgb(34, 38, 42);
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    column-gap: 233px;
+    align-items: flex-start;
+
+    h2 {
+        color: rgb(255, 255, 255);
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 51px;
+        margin-bottom: 66px;
+    }
+
+    .laptop {
+        width: 660px;
+    }
+
+    &-text {
+        display: flex;
+        align-items: flex-start;
+        column-gap: 20px;
+        .line {
+            background: rgb(241, 77, 52);
+            width: 3px;
+            height: 100px;
+        }
+
+        .block {
+            display: flex;
+            column-gap: 20px;
+            align-items: flex-start;
+
+            &-text {
+                max-width: 256px;
+                color: rgb(255, 255, 255);
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 22px;
+            }
+        }
+    }
+}
