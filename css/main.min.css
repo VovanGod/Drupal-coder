@@ -331,6 +331,7 @@ body {
 }
 
 .mainScreen {
+  position: relative;
   padding: 190px 110px 154px 110px;
 }
 .mainScreen .drupliconImg {
@@ -1241,5 +1242,13 @@ body {
 @media (max-width: 350px) {
   .pricing .price .rubles {
     right: 0;
+  }
+}
+@media (max-width: 568px) {
+  .line {
+    width: 4px !important;
+    border: none !important;
+    border-radius: 4px;
+    background-color: rgb(255, 81, 0) !important;
   }
 }/*# sourceMappingURL=main.min.css.map */
