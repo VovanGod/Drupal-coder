@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Base */
 /* Reset and base styles  */
 * {
@@ -679,6 +680,169 @@ body {
   line-height: 22px;
 }
 
+.pricing {
+  background-color: #ffffff;
+  padding: 150px 0 0 0;
+  text-align: center;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.pricing h2 {
+  color: rgb(0, 0, 0);
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.pricing-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 84px;
+}
+
+.pricing-plan {
+  background-color: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+  text-align: left;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  padding: 78px 70px 48px 60px;
+}
+
+.pricing-plan:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-plan h3 {
+  color: rgb(241, 77, 52);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.price {
+  position: relative;
+  color: rgb(5, 12, 51);
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 72px;
+}
+.price .rubles {
+  position: absolute;
+  right: 26px;
+  top: -14px;
+  color: rgb(5, 12, 51);
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.atHour {
+  color: rgb(5, 12, 51);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.line {
+  width: 100%;
+  border: 1px solid rgb(0, 0, 0);
+  opacity: 0.2;
+  margin: 20px 0 40px 0;
+}
+
+.pricing-plan ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 20px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.pricing-plan ul li {
+  color: rgb(5, 12, 51);
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  max-width: 239px;
+}
+
+.pricing-plan ul li::before {
+  content: "✔";
+  color: #f04e23;
+  margin-right: 10px;
+}
+
+.pricing-plan a.btn {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid rgb(241, 77, 52);
+  color: rgb(241, 77, 52);
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin-top: 43px;
+}
+
+.pricing-plan a.btn:hover {
+  background-color: #d13e1b;
+  color: #fff;
+}
+
+.custom-plan {
+  color: rgb(5, 12, 51);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  max-width: 468px;
+  margin: 0 auto;
+  margin-top: 52px;
+  text-align: center;
+}
+
+.plan {
+  display: block;
+  color: rgb(5, 12, 51);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 6%;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin-top: 26px;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+.plan:hover {
+  color: #d13e1b;
+}
+
 /* Media Blocks */
 @media (max-width: 1600px) {
   .header .container-flex {
@@ -1036,5 +1200,46 @@ body {
     -webkit-column-gap: 10px;
        -moz-column-gap: 10px;
             column-gap: 10px;
+  }
+}
+@media (max-width: 568px) {
+  .pricing {
+    padding: 100px 0 0 0;
+  }
+  .pricing h2 {
+    font-size: 34px;
+  }
+  .pricing-grid {
+    margin-top: 40px;
+  }
+  .pricing .price {
+    font-size: 58px;
+  }
+  .pricing .price .rubles {
+    right: 60px;
+    top: -10px;
+  }
+  .pricing .line {
+    margin: 20px 0 30px 0;
+  }
+  .pricing-plan {
+    padding: 48px 60px 48px 50px;
+  }
+  .pricing-plan h3 {
+    font-size: 20px;
+  }
+  .custom-plan {
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 30px;
+  }
+  .plan {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 350px) {
+  .pricing .price .rubles {
+    right: 0;
   }
 }/*# sourceMappingURL=main.min.css.map */
