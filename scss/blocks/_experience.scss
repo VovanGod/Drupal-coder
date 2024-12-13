@@ -1,12 +1,18 @@
 .experience {
-    padding-top: 175px;
+    padding: 380px 250px 173px 0;
     background: linear-gradient(232.84deg, rgba(255, 255, 255, 0.55) -108.093%,rgba(255, 255, 255, 0) 72.552%),rgb(34, 38, 42);
     position: relative;
-    z-index: 1;
 
     display: flex;
-    column-gap: 233px;
-    align-items: flex-start;
+    justify-content: flex-end;
+    margin-top: -280px;
+
+    &-wrapper {      
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        order: 1;
+    }
 
     h2 {
         color: rgb(255, 255, 255);
@@ -16,14 +22,26 @@
         margin-bottom: 66px;
     }
 
-    .laptop {
-        width: 660px;
+    .imgWrap {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 50%;
+        z-index: 10;
+        max-width: 660px;
+        order: 2;
+
+        .laptop {
+            width: 100%;
+            height: auto;
+            transform: translateY(16%);
+        }
     }
 
     &-text {
         display: flex;
         align-items: flex-start;
-        column-gap: 20px;
+        column-gap: 30px;
         .line {
             background: rgb(241, 77, 52);
             width: 3px;
@@ -36,7 +54,7 @@
             align-items: flex-start;
 
             &-text {
-                max-width: 256px;
+                max-width: 232px;
                 color: rgb(255, 255, 255);
                 font-size: 16px;
                 font-weight: 500;

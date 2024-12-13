@@ -557,7 +557,8 @@ body {
   -webkit-box-shadow: 0px 0px 3px -1px rgb(0, 0, 0);
           box-shadow: 0px 0px 3px -1px rgb(0, 0, 0);
   text-align: left;
-  z-index: 100;
+  z-index: 3;
+  background: #fff;
 }
 .support-card .number {
   color: rgb(5, 12, 51);
@@ -589,22 +590,35 @@ body {
   bottom: 0;
   right: 0;
   z-index: 1;
+  border-bottom-right-radius: 5px;
 }
 
 .experience {
-  padding-top: 175px;
+  padding: 380px 250px 173px 0;
   background: linear-gradient(232.84deg, rgba(255, 255, 255, 0.55) -108.093%, rgba(255, 255, 255, 0) 72.552%), rgb(34, 38, 42);
   position: relative;
-  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 233px;
-     -moz-column-gap: 233px;
-          column-gap: 233px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: -280px;
+}
+.experience-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 .experience h2 {
   color: rgb(255, 255, 255);
@@ -613,8 +627,22 @@ body {
   line-height: 51px;
   margin-bottom: 66px;
 }
-.experience .laptop {
-  width: 660px;
+.experience .imgWrap {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  z-index: 10;
+  max-width: 660px;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+.experience .imgWrap .laptop {
+  width: 100%;
+  height: auto;
+  -webkit-transform: translateY(16%);
+          transform: translateY(16%);
 }
 .experience-text {
   display: -webkit-box;
@@ -623,9 +651,9 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-column-gap: 20px;
-     -moz-column-gap: 20px;
-          column-gap: 20px;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
 }
 .experience-text .line {
   background: rgb(241, 77, 52);
@@ -644,7 +672,7 @@ body {
           align-items: flex-start;
 }
 .experience-text .block-text {
-  max-width: 256px;
+  max-width: 232px;
   color: rgb(255, 255, 255);
   font-size: 16px;
   font-weight: 500;
@@ -942,5 +970,54 @@ body {
   }
   .support-card {
     width: 100%;
+  }
+}
+@media (max-width: 1350px) {
+  .experience {
+    padding: 380px 30px 173px 0;
+  }
+}
+@media (max-width: 1000px) {
+  .experience {
+    padding: 280px 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    row-gap: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .experience-wrapper {
+    padding-left: 100px;
+  }
+  .experience .imgWrap {
+    position: relative;
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  .experience-wrapper {
+    padding-left: 0;
+    margin: 0 auto;
+  }
+  .experience h2 {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 30px;
+  }
+  .experience-text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 25px;
+  }
+  .experience .imgWrap {
+    margin-top: -40px;
   }
 }/*# sourceMappingURL=main.min.css.map */
