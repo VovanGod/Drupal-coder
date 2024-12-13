@@ -1020,4 +1020,21 @@ body {
   .experience .imgWrap {
     margin-top: -40px;
   }
+}
+@media (max-width: 480px) {
+  .experience h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 350px) {
+  .experience h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .experience-text .block {
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+  }
 }/*# sourceMappingURL=main.min.css.map */

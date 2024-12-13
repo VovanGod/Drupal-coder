@@ -46,3 +46,27 @@
         }
     }
 }
+
+@media (max-width: 480px) {
+    .experience {
+        h2 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .experience {
+        h2 {
+            font-size: 28px;
+            line-height: 36px;
+        }
+
+        &-text {
+            .block {
+                column-gap: 10px;
+            }
+        }
+    }
+}
