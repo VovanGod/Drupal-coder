@@ -3,6 +3,12 @@
     padding: 150px 0 0 0;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+    .line {
+      width: 100%;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      margin: 20px 0 40px 0;
+    }
   }
   
   .pricing h2 {
@@ -64,13 +70,6 @@
     font-size: 16px;
     font-weight: 500;
   }
-
-  .line {
-    width: 100%;
-    border: 1px solid rgb(0, 0, 0);
-    opacity: 0.2;
-    margin: 20px 0 40px 0;
-  }
   
   .pricing-plan ul {
     display: flex;
@@ -125,7 +124,7 @@
     text-align: center;
   }
 
-  .plan {
+  a.plan {
     display: block;
     color: rgb(5, 12, 51);
     font-size: 12px;
@@ -136,9 +135,5 @@
     text-transform: uppercase;
     margin-top: 26px;
     transition: all 0.1s ease-in;
-
-    &:hover {
-        color: #d13e1b;
-    }
   }
   
