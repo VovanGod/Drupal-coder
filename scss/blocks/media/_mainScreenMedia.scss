@@ -2,7 +2,7 @@
     .mainScreen {
         padding: 30px 110px 110px 110px;
         .drupliconImg {
-            top: -48%;
+            top: -156%;
         }
 
         .mainImg {
@@ -40,7 +40,7 @@
         }
 
         .drupliconImg {
-            top: -24%;
+            top: -60%;
         }
     }
 }
@@ -132,6 +132,24 @@
         .drupliconImg {
             top: 18%;
             left: -15%;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .mainScreen {
+        .container-flex {
+            padding: 0 10px;
+        }
+
+        .advantages {
+            max-width: 100%;
+            column-gap: 0px;
+            justify-content: space-around;
+
+            &-item .text {
+                max-width: 118px;
+            }
         }
     }
 }
