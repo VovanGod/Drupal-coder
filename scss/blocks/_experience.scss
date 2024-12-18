@@ -7,6 +7,13 @@
     justify-content: flex-end;
     margin-top: -280px;
 
+    .drupliconImg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 820px;
+    }
+
     &-wrapper {      
         display: flex;
         flex-direction: column;

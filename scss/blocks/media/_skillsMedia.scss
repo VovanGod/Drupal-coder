@@ -1,11 +1,25 @@
-@media (max-width: 1350px) {
+@media (max-width: 1250px) {
     .skills {
         &-wrapper {
             max-width: 100%;
             column-gap: 80px;
+            justify-content: center;
+        }
+
+        .h2-wrapper {
+            padding-left: 60px;
         }
     }
 }
+
+@media (max-width: 1010px) {
+    .skills {
+        .h2-wrapper {
+            width: auto;
+            padding-left: 0;
+        }
+    }
+} 
 
 @media (max-width: 940px) {
     .skills {
@@ -57,9 +71,6 @@
         .subtitle {
             margin: 14px 0 40px 0;
         }
-        .container {
-            padding: 0 50px;
-        }
     }
 }
 
@@ -81,4 +92,8 @@
             }
         }
     }
+}
+
+@media (max-width: 360px) {
+
 }

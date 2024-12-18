@@ -24,7 +24,14 @@
             <nav>
                 <ul>
                     <li><a href="#">Поддержка сайтов</a></li>
-                    <li><a href="#">тарифы</a></li>
+                    <li><div class="tarifs">
+                        тарифы
+                        <div class="tarifs-wrap">
+                            <a href="#">Стартовый</a>
+                            <a href="#">Бизнес</a>
+                            <a href="#">VIP</a>
+                        </div>
+                    </div></li>
                     <li><a href="#">наши работы</a></li>
                     <li><a href="#">отзывы</a></li>
                     <li><a href="#">контакты</a></li>
@@ -32,10 +39,13 @@
             </nav>
             <div class="wrap">
                 <a href="tel:78002222673" class="tel">8 800 222-26-73</a>
-                <a href="#" class="lang">
+                <div class="lang">
                     RU
                     <img src="./img/arrow-lang.svg" alt="arrowDown">
-                </a>
+                    <div class="tarifs-wrap lang-wrap">
+                        <a href="#!">EN</a>
+                    </div>
+                </div>
             </div>
             <div id="clickBurger" class="burger-wrap">
                 <button id="burger" class="burger"></button>
@@ -46,11 +56,25 @@
     <div id="modal" class="modal">
         <nav>
             <ul>
+                <div class="line"></div>
                 <li><a href="#">Поддержка сайтов</a></li>
-                <li><a href="#">тарифы</a></li>
+                <div class="line"></div>
+                <li><a href="#" class="tarifs">
+                    тарифы
+                    <img src="./img/arrow-lang.svg" alt="arrow-down">
+                    <ul class="caret">
+                        <li><a href="#">Стартовый</a></li>
+                        <li><a href="#">Базовый</a></li>
+                        <li><a href="#">VIP</a></li>
+                    </ul>
+                </a></li>
+                <div class="line"></div>
                 <li><a href="#">наши работы</a></li>
+                <div class="line"></div>
                 <li><a href="#">отзывы</a></li>
+                <div class="line"></div>
                 <li><a href="#">контакты</a></li>
+                <div class="line"></div>
             </ul>
         </nav>
     </div>
@@ -131,8 +155,10 @@
 
     <section class="skills">
         <div class="container">
-            <h2>13  лет совершенствуем компетенции в Drupal поддержке!</h2>
-            <div class="subtitle">Разрабатываем и оптимизируем модули, расширяем функциональность сайтов, обновляем дизайн</div>
+            <div class="h2-wrapper">
+                <h2>13  лет совершенствуем компетенции в Drupal поддержке!</h2>
+                <div class="subtitle">Разрабатываем и оптимизируем модули, расширяем функциональность сайтов, обновляем дизайн</div>
+            </div>
             <div class="skills-wrapper">
                 <div class="skills-card">
                     <div class="img-wrap">
@@ -282,6 +308,7 @@
     </section>
 
     <section class="experience">
+        <img src="./img/druplicon.svg" alt="image" class="drupliconImg">
         <div class="imgWrap">
             <img src="./img/laptop.png" class="laptop" alt="icon-laptop">
         </div>
@@ -619,7 +646,18 @@
         </div>
         <div class="line"></div>
         <div class="icons-wrapper">
-            <div class="icon"></div>
+            <a href="#" class="icon">
+                <img src="./img/facebook.svg" alt="facebook">
+            </a>
+            <a href="#" class="icon">
+                <img src="./img/vk.svg" alt="vk">
+            </a>
+            <a href="#" class="icon">
+                <img src="./img/telegram.svg" alt="telegram">
+            </a>
+            <a href="#" class="icon">
+                <img src="./img/youtube.svg" alt="youtube">
+            </a>
         </div>
         <div class="project">
             <div>Проект ООО «Инитлаб», Краснодар, Россия.</div>
