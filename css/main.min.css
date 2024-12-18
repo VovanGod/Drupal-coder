@@ -1741,13 +1741,6 @@ a.plan {
   .modal {
     width: 75%;
   }
-  .modal nav ul {
-    row-gap: 40px;
-  }
-  .modal nav a {
-    font-size: 16px;
-    padding: 6px 14px;
-  }
 }
 @media (max-width: 1350px) {
   .mainScreen {
