@@ -1384,6 +1384,79 @@ a.plan {
   padding: 0 15px;
 }
 
+.faq {
+  padding: 60px 0;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.faq h2 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 auto;
+}
+.faq-container {
+  max-width: 980px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.faq-list {
+  list-style: none;
+}
+.faq-item {
+  border-radius: 6px;
+  margin-bottom: 0.8rem;
+  padding: 12px 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px #fff solid;
+}
+.faq-item:hover {
+  -webkit-box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+.faq-item:hover h3 {
+  color: var(--color-orange);
+}
+.faq-item h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.faq-item p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.4;
+  max-height: 0;
+  padding: 0 0.5rem;
+  overflow: hidden;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.faq-item.active {
+  border: 2px var(--color-orange) solid;
+}
+.faq-item.active p {
+  max-height: 500px;
+}
+.faq-item.active h3 {
+  color: var(--color-orange);
+}
+
 .contacts {
   position: relative;
   display: -webkit-box;
@@ -2512,5 +2585,28 @@ a.plan {
 @media (max-width: 380px) {
   .popup .agree label {
     max-width: 220px;
+  }
+}
+@media (max-width: 1000px) {
+  .faq {
+    padding: 0 20px 50px 20px;
+  }
+  .faq h2 {
+    font-size: 36px;
+  }
+  .faq-item {
+    padding: 12px 10px;
+    margin-bottom: 2px;
+  }
+}
+@media (max-width: 786px) {
+  .faq h2 {
+    font-size: 34px;
+  }
+  .faq-item h3 {
+    font-size: 16px;
+  }
+  .faq-item p {
+    font-size: 15px;
   }
 }/*# sourceMappingURL=main.min.css.map */
