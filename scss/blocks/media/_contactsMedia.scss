@@ -52,6 +52,16 @@
     }
 }
 
+@media (max-width: 990px) {
+    .contacts {
+        padding: 0 0 140px 0;
+
+        .imgD {
+            bottom: 86px;
+        }
+    }
+}
+
 @media (max-width: 880px) {
     .popup {
         form {

@@ -10,6 +10,17 @@ clickBurger.addEventListener("click", ()=> {
     $("html").toggleClass("no-scroll");
 })
 
+const modalItems = document.querySelectorAll('.modalItem');
+
+modalItems.forEach(item => {
+  item.addEventListener('click', () => {
+    modal.classList.toggle("modal-active");
+    burger.classList.toggle("burger-active");
+    $("body").toggleClass("no-scroll");
+    $("html").toggleClass("no-scroll");
+  });
+});
+
 let currentSlide = 0;
 const slides = document.querySelectorAll('.slide');
 
